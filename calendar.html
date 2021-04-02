@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Календарь мероприятий | TUI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+
+    <meta property="og:title" content="Новости компании | TUI">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Новости компании | TUI">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/progress-circle.css">
+    <link rel="stylesheet" href="css/compiled.css">
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="header">
+        <div class="content">
+            <div class="header-inner">
+                <div class="header-left">
+                    <button class="hamburger hamburger--squeeze" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+                    </button>
+                    <a href="#" class="logo"></a>
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="active"><a href="#"><span>Мое обучение</span></a></li>
+                            <li><a href="#"><span>Календарь</span></a></li>
+                            <li><a href="#"><span>Новости</span></a></li>
+                            <li><a href="#"><span>Библиотека</span></a></li>
+                            <li class="header-link-x">
+                                <a href="#" class="header-link">
+                                    <img src="img/icons/icon-case.svg" alt=""/>
+                                    Магазин наград
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header-link">
+                        <img src="img/icons/icon-case.svg" alt="">
+                        Магазин наград
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="user-notification">
+                        <div class="user-notification-value">2</div>
+                    </div>
+                    <div class="user">
+                        <img src="img/user.svg" alt="" class="user-avatar">
+                        <div class="user-name">Конобеев М.</div>
+                        <div class="user-type">Стажер</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="body">
+
+        <!-- Статистика -->
+        <section class="section wow fadeIn" data-wow-offset="50">
+            <div class="content">
+                <div class="panel">
+                    <div class="stats">
+                        <div class="grid">
+                            <div class="box">
+                                <div class="stats-status">
+                                    <img src="img/level-1.svg" alt="" class="stats-status-icon">
+                                    <div class="stats-status-item">
+                                        <div class="stats-status-item-title">Текущий уровень</div>
+                                        <div class="stats-status-item-value">Стажер</div>
+                                    </div>
+                                    <div class="stats-status-item">
+                                        <div class="stats-status-item-title">Агентство</div>
+                                        <div class="stats-status-item-value">TUI Северодвинск</div>
+                                    </div>
+                                    <div class="stats-status-balance">
+                                        <table>
+                                            <tr>
+                                                <td><img src="img/icons/icon-star.svg" alt=""></td>
+                                                <td>Баллы:</td>
+                                                <td>34</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="img/icons/icon-coins.svg" alt=""></td>
+                                                <td>Монетки:</td>
+                                                <td>100500</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="stats-results">
+                                    <div class="stats-result">
+                                        <div class="progress-circle progress-65"></div>
+                                        <div class="stats-result-content">
+                                            <div class="stats-result-title">Результат команды</div>
+                                            <div class="stats-result-value">3 из 5 сотрудников</div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-result">
+                                        <div class="progress-circle progress-85"></div>
+                                        <div class="stats-result-content">
+                                            <div class="stats-result-title">РАХ</div>
+                                            <div class="stats-result-value">82 из 100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="stats-progress">
+                                    <div class="stats-progress-title">До уровня <b>Агент 001</b> осталось <b>65%</b>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="cells">
+                                            <div class="cell">
+                                                <div class="progress-title">Стажер</div>
+                                            </div>
+                                            <div class="cell">
+                                                <div class="progress-title">Агент 001</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-line" style="width: 65%;"></div>
+                                    </div>
+                                    <a href="#" class="link-extra">
+                                        <img src="img/icons/icon-map.svg" alt="">
+                                        <span>Карта уровней</span>
+                                    </a>
+                                </div>
+                                <div class="stats-results">
+                                    <div class="stats-result">
+                                        <div class="progress-circle progress-65"></div>
+                                        <div class="stats-result-content">
+                                            <div class="stats-result-title">
+                                                Результат команды
+                                            </div>
+                                            <div class="stats-result-value">
+                                                3 из 5 сотрудников
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stats-result">
+                                        <div class="progress-circle progress-85"></div>
+                                        <div class="stats-result-content">
+                                            <div class="stats-result-title">РАХ</div>
+                                            <div class="stats-result-value">82 из 100</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="stats-open">Статистика</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Мероприятия -->
+        <section class="section wow fadeIn" data-wow-offset="50">
+            <div class="content">
+                <div class="panel">
+                    <h3 class="section-pretitle">Календарь</h3>
+                    <div class="section-bar">
+                        <div class="cells calendar-cells">
+                            <div class="cell calendar-cell">
+                                <h2 class="section-title">Календарь мероприятий</h2>
+                                <div class="event-switch">
+                                    <select name="" id="">
+                                        <option value="" selected>Мои мероприятия</option>
+                                        <option value="">Не мои мероприятия</option>
+                                        <option value="">Все мероприятия</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="search">
+                                    <form>
+                                        <img src="img/icons/icon-search.svg" alt="" class="search-icon">
+                                        <button class="search-button">
+                                            <img src="img/icons/icon-search.svg" alt="">
+                                        </button>
+                                        <input type="text" class="field">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="calendar">
+                        <div class="calendar-meta">
+                            <div class="calendar-switch">
+                                <button class="left"></button>
+                                <span>Декабрь 2020</span>
+                                <button class="right"></button>
+                            </div>
+                            <div class="country-switch">
+                                <h4>Страна:</h4>
+                                <select name="" id="">
+                                    <option value="">Все</option>
+                                    <option value="">Россия</option>
+                                    <option value="">США</option>
+                                    <option value="">Австралия</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="center mobile-calendar-filter">
+                            <button>Отобрать по формату обучения</button>
+                        </div>
+                        <div class="calendar-types">
+                            <div>
+                                <span class="closer"></span>
+                                <h3>Формат обучения:</h3>
+                                <div class="in-calendar">
+                                    <div class="type">
+                                        <!-- чекбокс может быть disabled -->
+                                        <input type="checkbox" name="" id="vebinar" checked>
+                                        <label for="vebinar">Вебинар</label>
+                                    </div>
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="online" checked>
+                                        <label for="online">Оналйн-тренинг</label>
+                                    </div>
+
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="offline" checked>
+                                        <label for="offline">Оффлайн-тренинг</label>
+                                    </div>
+
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="testing" checked>
+                                        <label for="testing">Тестирование</label>
+                                    </div>
+
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="seminar" checked>
+                                        <label for="seminar">Семинар</label>
+                                    </div>
+
+                                    <div class="type electro-course">
+                                        <input type="checkbox" name="" id="electro-course" checked>
+                                        <label for="electro-course">Электронный курс</label>
+                                    </div>
+
+                                    <div class="type master-class">
+                                        <input type="checkbox" name="" id="master-class" checked>
+                                        <label for="master-class">Мастер класс</label>
+                                    </div>
+
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="business" checked>
+                                        <label for="business">Бизнес- игра</label>
+                                    </div>
+
+                                    <div class="type">
+                                        <input type="checkbox" name="" id="info-tour" checked>
+                                        <label for="info-tour">Инфо-тур</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- calendar on grid css -->
+                        <div class="calendar">
+                            <div class="calendar-caption">
+                                ПН
+                            </div>
+                            <div class="calendar-caption">
+                                ВТ
+                            </div>
+                            <div class="calendar-caption">
+                                СР
+                            </div>
+                            <div class="calendar-caption">
+                                ЧТ
+                            </div>
+                            <div class="calendar-caption">
+                                ПТ
+                            </div>
+                            <div class="calendar-caption">
+                                СБ
+                            </div>
+                            <div class="calendar-caption">
+                                ВС
+                            </div>
+                            <!-- start calenda items -->
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Вс">27</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Пн">28</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Вт">29</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Ср">30</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Чт">31</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Пт">1</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Сб">2</span>
+                                </div>
+                            </div>
+
+
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Вс">3</span>
+                                    <div class="info-tour">
+                                        <div class="time">18:00</div>
+                                        <div>Как правильно продав...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Пн">4</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item disabled">
+                                <div class="inner-item">
+                                    <span data-label="Вт">5</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Ср">6</span>
+                                    <div class="business">
+                                        <div class="time">11:00</div>
+                                        <div>Документооборот</div>
+                                    </div>
+                                    <div class="online">
+                                        <div class="time">18:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">20:00</div>
+                                        <div>Сомелье 2.0</div>
+                                    </div>
+                                    <button class="show-items">Еще 1 событие</button>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Чт">7</span>
+                                    <div class="seminar">
+                                        <div class="time">13:00</div>
+                                        <div>Продвижение в социа...</div>
+                                    </div>
+                                    <div class="online">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="offline">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <div class="vebinar">
+                                        <div class="time">13:00</div>
+                                        <div>Клиенты на всю жизнь</div>
+                                    </div>
+                                    <button class="show-items">Еще 2 события</button>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пт">8</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Сб">9</span>
+                                </div>
+                            </div>
+
+
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вс">10</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пн">11</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вт">12</span>
+                                    <div class="testing">
+                                        <div class="time">08:00</div>
+                                        <div>Итоговое тести...</div>
+                                    </div>
+                                    <div class="electro-course right-item">
+                                        <div>Как правильно продавать пляжный от...</div>
+                                    </div>
+                                    <div class="electro-course right-item">
+                                        <div>Как правильно продавать пляжный от...</div>
+                                    </div>
+                                    <div class="electro-course right-item">
+                                        <div>Как правильно продавать пляжный от...</div>
+                                    </div>
+                                    <button class="show-items">Еще 2 события</button>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Ср">13</span>
+                                    <div class="testing">
+                                        <div class="time">08:00</div>
+                                        <div>Итоговое тести...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Чт">14</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пт">15</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Сб">16</span>
+                                </div>
+                            </div>
+
+
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вс">17</span>
+                                    <div class="info-tour">
+                                        <div class="time">10:00</div>
+                                        <div>Как уходить домой вов...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пн">18</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вт">19</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Ср">20</span>
+                                    <div class="offline">
+                                        <div class="time">13:00</div>
+                                        <div>Горные лыжи и сноубо...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Чт">21</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пт">22</span>
+                                    <div class="testing">
+                                        <div class="time">18:00</div>
+                                        <div>Дегустация вин с умом</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Сб">23</span>
+                                </div>
+                            </div>
+
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вс">24</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пн">25</span>
+                                    <div class="vebinar">
+                                        <div class="time">18:00</div>
+                                        <div>Сомелье 2.0</div>
+                                    </div>
+
+                                    <div class="testing">
+                                        <div class="time">18:00</div>
+                                        <div>Популярные направле...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Вт">26</span>
+                                    <div class="business">
+                                        <div class="time">18:00</div>
+                                        <div>Как проводить турист...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Ср">27</span>
+                                    <div class="info-tour">
+                                        <div class="time">18:00</div>
+                                        <div>Как правильно продав...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Чт">28</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Пт">29</span>
+                                </div>
+                            </div>
+                            <div class="calendar-item">
+                                <div class="inner-item">
+                                    <span data-label="Сб">30</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="remark">* Время московское</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer wow fadeIn"></footer>
+
+</div>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/select.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
