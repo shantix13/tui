@@ -4269,21 +4269,21 @@ body .select .select-option.active {
   justify-content: space-between;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .event .inteacher .teacher {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+  margin-right: 30px;
 }
 .event .inteacher .teacher span {
   color: #333333;
 }
 .event .inteacher .teacher img {
-  margin-right: 20px;
-}
-.event .inteacher .teacher:first-of-type {
-  margin-right: 127px;
+  margin-right: 10px;
 }
 .event-modal {
   text-align: center;
@@ -5757,9 +5757,6 @@ body .select .select-option.active {
   }
   .agency-rating .rating-id-caption {
     width: 20%;
-  }
-  .event .inteacher .teacher:first-of-type {
-    margin-right: 20%;
   }
   .agency-rating .rating-name {
     padding-left: 15px;
