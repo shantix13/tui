@@ -2245,6 +2245,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  margin-right: 6px;
 }
 .library-row .name span {
   position: relative;
@@ -2267,6 +2268,7 @@
 }
 .library-row .filesize {
   width: 20%;
+  margin-left: 5px;
 }
 .library-row:hover {
   background-color: #e5f3fd;
@@ -4530,6 +4532,10 @@
   }
   .library-row .filesize {
     width: 18%;
+  }
+  .library-row .date-time,
+  .library-row .filesize {
+    font-size: 12px;
   }
 }
 @media (max-width: 455px) {
