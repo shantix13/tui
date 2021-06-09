@@ -1748,7 +1748,7 @@
   background-color: rgba(243, 243, 243, 0.5);
 }
 .calendar-item.disabled span {
-  color: #dcdcdc;
+  color: #929292;
   font-weight: 400;
 }
 .calendar-item.disabled > div {
@@ -1759,7 +1759,7 @@
   font-size: 16px;
   color: #13295c;
   font-family: 'TUIType Cyrillic';
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 4px;
@@ -1790,6 +1790,7 @@
 .calendar-item:not(.disabled):hover .inner-item span,
 .calendar-item.width-2p-wrap:not(.disabled):hover + .calendar-item .inner-item span {
   background-color: #E5F3FD;
+  font-weight: 700;
 }
 .calendar-item.width-2p-wrap:not(.disabled):hover + .calendar-item .inner-item {
   z-index: 90;

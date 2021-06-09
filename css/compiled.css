@@ -3,28 +3,28 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'TUIType Cyrillic';
@@ -3531,7 +3531,7 @@ body .select .select-option.active {
   background-color: rgba(243, 243, 243, 0.5);
 }
 .calendar-item.disabled span {
-  color: #dcdcdc;
+  color: #929292;
   font-weight: 400;
 }
 .calendar-item.disabled > div {
@@ -3542,7 +3542,7 @@ body .select .select-option.active {
   font-size: 16px;
   color: #13295c;
   font-family: 'TUIType Cyrillic';
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   margin-top: 5px;
   margin-bottom: 4px;
@@ -3573,6 +3573,7 @@ body .select .select-option.active {
 .calendar-item:not(.disabled):hover .inner-item span,
 .calendar-item.width-2p-wrap:not(.disabled):hover + .calendar-item .inner-item span {
   background-color: #E5F3FD;
+  font-weight: 700;
 }
 .calendar-item.width-2p-wrap:not(.disabled):hover + .calendar-item .inner-item {
   z-index: 90;
