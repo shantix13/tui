@@ -3877,9 +3877,6 @@
   #certz-modal .modal-win {
     width: 400px;
   }
-  .search {
-    display: none;
-  }
   #profile-data .agency-select h4 {
     font-size: 17px;
   }
@@ -4117,6 +4114,9 @@
 @media (max-width: 605px) {
   .section-title {
     font-size: 25px;
+  }
+  .agency-rating .top-panel {
+    flex-direction: column;
   }
   .pagination ul li a,
   .pagination ul li span {
@@ -5084,6 +5084,12 @@
   }
   .agency-rating .caption-table div::after {
     display: none;
+  }
+  .agency-rating .top-panel {
+    align-items: flex-start;
+  }
+  .search.active {
+    width: 270px;
   }
 }
 @media (max-width: 325px) {
