@@ -1,222 +1,3 @@
-@font-face {
-  font-family: 'TUIType Cyrillic';
-  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.eot");
-  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.woff2") format("woff2"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.woff") format("woff"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.svg#TUIType Cyrillic Bold") format("svg");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-  
-  /* IE9*/
-  /* iOS 4.1- */
-}
-@font-face {
-  font-family: 'TUIType Cyrillic';
-  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.eot");
-  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.woff2") format("woff2"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.woff") format("woff"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.svg#TUIType Cyrillic Bold") format("svg");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-  
-  /* IE9*/
-  /* iOS 4.1- */
-}
-@font-face {
-  font-family: 'TUIType Cyrillic Light';
-  src: url('../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Light.ttf');
-  font-weight: 300;
-  font-display: swap;
-  font-style: italic;
-}
-.clear:before {
-  content: '';
-  display: table;
-}
-.clear:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.image-cover-wrap {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.image-cover {
-  display: none !important;
-}
-.center {
-  text-align: center;
-}
-.right {
-  text-align: center;
-}
-.text-columns {
-  -moz-column-count: 4;
-  -webkit-column-count: 4;
-  column-count: 4;
-}
-.icon-hover:hover .icon:before {
-  opacity: 0;
-}
-.icon-hover:hover .icon:after {
-  opacity: 1;
-}
-.icon {
-  position: relative;
-}
-.icon:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-background-size: contain !important;
-  background-size: contain !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.icon:after {
-  opacity: 0;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-background-size: contain !important;
-  background-size: contain !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.icon.yandex {
-  top: -2px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
-}
-.icon.mailru {
-  top: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 19px;
-  height: 19px;
-}
-.icon.vk {
-  top: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
-}
-.icon.facebook {
-  top: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 19px;
-  height: 19px;
-}
-.icon.google {
-  top: -1px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
-}
-.icon-back {
-  display: inline-block;
-  vertical-align: middle;
-  width: 6px;
-  height: 11px;
-  margin-right: 12px;
-}
-.preloader {
-  display: block;
-  width: 60px;
-  height: 60px;
-  margin: auto;
-}
-.preloader:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 4px solid #d40e14;
-  border-color: #d40e14 transparent #d40e14 transparent;
-  animation: preloader 1.2s linear infinite;
-}
-.preloader.lg {
-  width: 80px;
-  height: 80px;
-}
-.preloader.lg:after {
-  border-width: 5px;
-}
-.preloader.sm {
-  width: 30px;
-  height: 30px;
-}
-.preloader.sm:after {
-  border-width: 3px;
-}
-@keyframes preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.font-link:hover span {
-  border-bottom-color: rgba(0, 0, 0, 0);
-}
-.font-link span {
-  display: inline;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  -webkit-transition: border 0.2s ease-in-out;
-  -moz-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-}
-.style-h2 {
-  font-family: 'TUIType Cyrillic', 'Open Sans', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-}
-.style-h3 {
-  font-family: 'TUIType Cyrillic', 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-}
-.style-h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: #737373;
-}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1729,6 +1510,225 @@ body .select .select-option.active {
   text-align: right;
 }
 .progress-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #737373;
+}
+@font-face {
+  font-family: 'TUIType Cyrillic';
+  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.eot");
+  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.woff2") format("woff2"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.woff") format("woff"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Bold.svg#TUIType Cyrillic Bold") format("svg");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'TUIType Cyrillic';
+  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.eot");
+  src: url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.woff2") format("woff2"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.woff") format("woff"), /* chrome、firefox */ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/TUIType-Cyrillic/TUIType-Cyrillic.svg#TUIType Cyrillic Bold") format("svg");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  
+  /* IE9*/
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'TUIType Cyrillic Light';
+  src: url('../fonts/TUIType-Cyrillic/TUIType-Cyrillic-Light.ttf');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+.clear:before {
+  content: '';
+  display: table;
+}
+.clear:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.image-cover-wrap {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.image-cover {
+  display: none !important;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: center;
+}
+.text-columns {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+}
+.icon-hover:hover .icon:before {
+  opacity: 0;
+}
+.icon-hover:hover .icon:after {
+  opacity: 1;
+}
+.icon {
+  position: relative;
+}
+.icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.icon:after {
+  opacity: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: contain !important;
+  background-size: contain !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.icon.yandex {
+  top: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+.icon.mailru {
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+}
+.icon.vk {
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+.icon.facebook {
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+}
+.icon.google {
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+}
+.icon-back {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 11px;
+  margin-right: 12px;
+}
+.preloader {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+.preloader:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #d40e14;
+  border-color: #d40e14 transparent #d40e14 transparent;
+  animation: preloader 1.2s linear infinite;
+}
+.preloader.lg {
+  width: 80px;
+  height: 80px;
+}
+.preloader.lg:after {
+  border-width: 5px;
+}
+.preloader.sm {
+  width: 30px;
+  height: 30px;
+}
+.preloader.sm:after {
+  border-width: 3px;
+}
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.font-link:hover span {
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+.font-link span {
+  display: inline;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.style-h2 {
+  font-family: 'TUIType Cyrillic', 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.style-h3 {
+  font-family: 'TUIType Cyrillic', 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.style-h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   font-weight: 400;
