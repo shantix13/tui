@@ -4940,6 +4940,19 @@ body .select .select-option.active {
   box-shadow: none;
   border: 1px solid #d40e14;
 }
+.aquire {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 32px;
+  line-height: 19px;
+}
+.aquire a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.aquire a:hover {
+  text-decoration: none;
+}
 @media (max-width: 1270px) {
   .content,
   .page {
@@ -6031,6 +6044,9 @@ body .select .select-option.active {
     padding-right: 30px;
     margin-left: 10px;
   }
+  .aquire {
+    margin-top: 30px;
+  }
   #write-comment .comment-input {
     width: 60%;
   }
@@ -6372,6 +6388,9 @@ body .select .select-option.active {
   .library-row .filesize {
     font-size: 12px;
   }
+  .aquire {
+    margin-top: 28px;
+  }
 }
 @media (max-width: 455px) {
   #profile-data h1 {
@@ -6503,6 +6522,9 @@ body .select .select-option.active {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header .aquire {
+    margin-top: 25px;
+  }
   .content,
   #profile-data .agency-panel .content {
     width: 100%;
@@ -6625,6 +6647,9 @@ body .select .select-option.active {
   }
   .library-row .name span {
     word-break: break-word;
+  }
+  .aquire {
+    margin-top: 21px;
   }
 }
 @media (max-width: 417px) {
@@ -6754,6 +6779,9 @@ body .select .select-option.active {
     font-size: 11px;
     margin-right: 13px;
   }
+  .aquire {
+    margin-top: 18px;
+  }
 }
 @media (max-width: 375px) {
   .calendar-types > div {
@@ -6881,6 +6909,9 @@ body .select .select-option.active {
   #profile-data #profile-data .certz .achivment h4,
   #profile-data #profile-data .certz .achivment h4 {
     font-size: 12px;
+  }
+  .aquire {
+    margin-top: 15px;
   }
   .pagination {
     margin-top: 25px;
